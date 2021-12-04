@@ -1,0 +1,154 @@
+@import '/src/variable.scss';
+
+.offersInStore {
+    line-height: 1;
+    font-size: 24px;
+    color: #141823;
+}
+
+.viewAll {
+    color: #777778;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.offerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.offer {
+    position: relative;
+    animation: 500ms ease 0s 1 normal forwards running;
+    background: #fff;
+    width: 100%;
+    margin-top: auto;
+    z-index: 18;
+    padding-bottom: 20px;
+    float: left;
+    border-radius: 5px;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .4s ease;
+    font-family: 'Quicksand',serif;
+    font-weight: 700;
+    padding: 8px 12px;
+}
+
+.list {
+    padding-bottom: 5px;
+    justify-content: center;
+    line-height: 1;
+    padding-top: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.offers {
+    font-size: 15px;
+    border: none;
+    line-height: 1;
+    color: $primary-color;
+    cursor: pointer;
+    border-bottom: 2px solid $primary-color;
+    border-radius: 0px;
+}
+
+// .offers:after {
+//     border-width: 1px;
+//     top: 12px;
+//     border-color: #2276e3;
+//     width: 100%;
+//     content: '';
+//     display: block;
+//     border: 2px solid #2276e3;
+//     position: relative;
+//     :after {
+//         box-sizing: border-box;
+//         vertical-align: baseline!important;
+//         padding: 0;
+//         margin: 0;
+//     }
+// }
+
+.products {
+    font-size: 15px;
+    border: none;
+    color: #111;
+    cursor: pointer;
+}
+
+.offerButton {
+    background: #f37638;
+    color: #fff;
+    font-weight: bold;
+    font-style: normal;
+    border-radius: 8px;
+    padding: 7px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+}
+
+.product-ArrowButton {
+    background: none;
+    border: none;
+    // color: #fff;
+    font-size: 30px;
+}
+
+.offer-details {
+    display: inline-block;
+    font-size: 13px;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.valid-till {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    height: 30px;
+}
+
+.valid-offer {
+    font-size: 12px;
+    line-height: 1;
+    color: #666;
+}
+
+@media (max-width: 460px) {
+
+    .offersInStore {
+        font-size: 19px;
+    }
+
+    .viewAll {
+        font-size: 12px;
+    }
+
+    .valid-till {
+        padding-left: 12px;
+    }
+
+    .offer-details {
+        font-size: 9px;
+    }
+
+    .valid-offer {
+        font-size: 8px;
+    }
+}

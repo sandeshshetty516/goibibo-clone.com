@@ -1,0 +1,396 @@
+@import '/src/variable.scss';
+
+.widget {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: auto;
+    width: 100%;
+    float: left;
+}
+
+.pageBgBlue {
+    background-color: $primary-color;
+    position: absolute;
+    transform: translate(50%);
+    z-index: 2;
+    border-radius: 50%;
+    width: 69.375rem;
+    height: 59.375rem;
+    top: -28.125rem;
+    left: -43.125rem;
+}
+
+.pageBgLight {
+    background-color: #d1e5fe;
+    position: absolute;
+    transform: translate(50%);
+    border-radius: 50%;
+    width: 73.125rem;
+    height: 62.5rem;
+    top: -31.25rem;
+    left: -47.5rem;
+}
+
+.booking {
+    z-index: 19;
+    font-family: 'Quicksand',Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    padding-top: 20px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.heading {
+    font-size: 22px;
+    text-align: left;
+    font-weight: 900;
+    text-transform: capitalize;
+    line-height: 1;
+    color: #fff;
+}
+
+.trip-nav {
+    display: flex;
+    padding-top: 1px;
+    padding-bottom: 20px;
+
+    & .contain {
+        display: inline-flex;
+        align-items: center;
+        line-height: 1;
+        padding: 2px;
+        font-size: 15px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        color: #647a97;
+        border-radius: 30px;
+
+        & span {
+            padding: 8px 23px;
+            cursor: pointer;
+        }
+
+        & #oneway {
+            background-color: $primary-color!important;
+            border-radius: 30px;
+            color: #fff;
+        }
+    }
+}
+
+.type:hover {
+    background-color: #d1e5fe;
+    border-radius: 30px;
+}
+
+.content {
+    max-width: 1200px;
+}
+
+.search-widget {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.enter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    padding-right: 20px;
+}
+
+.input-entry {
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.input {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 19%;
+}
+
+input {
+    height: 80px;
+    font-weight: 600;
+    color: #000;
+    background-color: #fff;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    outline: none;
+    width: 100%;
+    cursor: text;
+    text-align: start;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 8.33%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.search-button {
+    background: #f37638;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.33;
+    padding: 8px 16px;
+    height: 80px;
+    font-family: 'Quicksand',Helvetica,Arial,sans-serif!important;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+.checkbox-container {
+    transition: margin .5s ease;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    display: flex;
+    line-height: 1;
+    font-size: 13px;
+    color: #fff;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-wrapper {
+    margin-right: 16px;
+    width: 23%;
+}
+
+input[type='checkbox'] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    border: initial;
+}
+
+.checkbox-input {
+    cursor: pointer;
+    z-index: -1;
+    position: absolute;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    height: 25px;
+    width: 25px;
+}
+
+.checkbox-label {
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    transition: all .1s;
+    margin-right: 16px;
+}
+
+.checkbox-label ::before {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    content: "";
+    display: inline-block;
+    font-size: 20px;
+    height: 20px;
+    margin-right: 6px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.new {
+    border: none;
+    background: red;
+    font-family: 'Quicksand';
+    font-size: bold;
+}
+
+.aad {
+    margin: auto;
+    width: 970px;
+    height: 90px;
+    cursor: pointer;
+    padding-top: 20px;
+    position: relative;
+
+    & img{
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+
+
+    input [type=text] {
+        height: 45px;
+        font-weight: 600;
+        font-size: 10px;
+    }
+
+    .heading {
+        font-size: 19px;
+        padding-right: 5px;
+    }
+
+    .booking {
+        background-color: $primary-color;
+    }
+
+    .aad{
+        width: 100%;
+        padding-top: 5px;
+        height: auto;
+
+        & img {
+            border-radius: 5px;
+        }
+    }
+
+    .widget {
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+
+    .input-entry input {
+        height: 45px;
+    }
+
+    .search-button {
+        height: 45px;
+    }
+
+    .pageBgLight {
+        width: 0;
+        height: 0;
+    }
+    .pageBgBlue {
+        width: 0;
+        height: 0;
+    }
+
+    .input {
+        width: 40%;
+    }
+
+    .enter {
+        width: 80%;
+    }
+
+    .enter {
+        padding-right: 30px;
+        padding-left: 10px;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .trip-nav {
+        display: flex;
+        padding-top: 1px;
+        padding-bottom: 18px;
+    
+        & .contain {
+            padding: 2px;
+            font-size: 11px;
+            border-radius: 25px;
+    
+            & span {
+                padding: 7px 21px;
+            }
+    
+            & #oneway {
+                border-radius: 25px;
+            }
+        }
+    }
+
+    input {
+        height: 30px;
+        font-weight: 600;
+        font-size: 7px;
+    }
+
+    .widget {
+        padding-bottom: 15px;
+        padding-top: 25px;
+    }
+
+    .heading {
+        font-size: 15px;
+        padding-right: 5px;
+    }
+
+    .input {
+        width:80%;
+    }
+
+    .input-entry input {
+        height: 30px;
+    }
+
+    .search-button {
+        height: 30px;
+    }
+
+    .widget {
+        padding-bottom: 6px;
+    }
+
+    .button {
+        width: 6%;
+    }
+
+    .search-button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    .checkbox-label {
+        cursor: pointer;
+        font-size: 8px;
+        display: inline-block;
+        position: relative;
+        transition: all .1s;
+        margin-right: 16px;
+    }
+    
+    .checkbox-label ::before {
+        border: 1.5px solid #fff;
+        border-radius: 3px;
+        font-size: 11px;
+        height: 13px;
+        width: 13px;
+    }
+
+    .checkbox-input {
+        height: 17px;
+        width: 17px;
+    }
+}

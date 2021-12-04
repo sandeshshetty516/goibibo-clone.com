@@ -1,0 +1,365 @@
+@import '/src/variable.scss';
+
+.navbarItems {
+    display: block;
+    height: 64px;
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 50px ;
+    z-index: 1000;
+}
+
+.appLogo h1{
+    color: $primary-color;
+}
+
+.appLogo h1 span {
+    color: $seconday-color;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+}
+
+.state {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    border-radius: 18px;
+    font-size: 14px;
+    color: #777;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .4s ease;
+    font-family: 'Quicksand',serif;
+    font-weight: 700;
+    padding: 8px 12px;
+}
+
+.link {
+    color: $primary-color;
+    display: inline-flex;
+    font-size: 17px;
+    margin-right: 5px;
+    align-items: center;
+}
+
+.state:hover {
+    background-color: #d1e5fe;
+}
+
+.active {
+    background-color: $primary-color!important;
+    color: #fff;
+    border: 1px solid $primary-color;
+}
+
+
+
+.container {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+
+.trip {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+    min-height: 40px;
+    min-width: 109px;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    margin-right: 5px;
+    display: block;
+}
+
+.trip-1 {
+    margin: 0;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.trip-2 {
+    margin: 0;
+    color: #333;
+    font-family: 'Quicksand',Arial,sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.login-tab {
+    width: 170px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid $primary-color;
+    background-color: #fff;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.logo-2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: $primary-color;
+    font-size: 25px;
+}
+
+.font {
+    font-size: 10px;
+    margin: 0;
+    font-weight: 900;
+    color: $primary-color;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1150px) {
+
+    .state {
+        border: 1px solid #e1e1e1;
+        border-radius: 15px;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 6px 9px;
+    }
+
+    .navbar ul {
+        margin: auto;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: center;
+    }
+
+    .link {
+        display: inline-flex;
+        font-size: 13px;
+        margin-right: 3px;
+    }
+
+    .navbar {
+        padding: 0 30px ;
+    }
+
+    .appLogo h1 {
+        font-size: 25px;
+    }
+
+    .trip {
+        width: 150px;
+        min-height: 25px;
+        min-width: 80px;
+        margin-right: 13px;
+    }
+
+    .logo {
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+        margin-right: 3px;
+    }
+
+    .trip-1 {
+        font-weight: 300;
+        font-size: 7px;
+    }
+    
+    .trip-2 {
+        font-weight: 800;
+        font-size: 10px;
+    }
+
+    .login-tab {
+        width: 130px;
+        height: 30px;
+        border-radius: 6px;
+        padding: 0 7px;
+    }
+    
+    .logo-2 {
+        margin-left: 7px;
+        margin-right: 7px;
+        font-size: 18px;
+    }
+    
+    .font {
+        font-size: 7px;
+    }
+
+    // .appLogo {
+    //     width: 100%;
+    //     justify-content: center;
+    // }
+
+    // .nav-items {
+    //      width: 58%;
+    // }
+
+    // .container {
+    //     width: 36%;
+    // }
+
+}
+
+@media (max-width:800px) {
+    .state {
+        border: 1px solid #e1e1e1;
+        border-radius: 12px;
+        font-size: 8px;
+        font-weight: 600;
+        padding: 4px 8px;
+    }
+
+    .link {
+        font-size: 10px;
+        margin-right: 2px;
+    }
+
+    .navbar {
+        padding: 0 20px ;
+    }
+
+    .appLogo h1 {
+        font-size: 20px;
+    }
+
+    .nav {
+        width: 300px;
+    }
+
+    .trip {
+        width: 100px;
+        min-height: 20px;
+        min-width: 60px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        margin-right: 2px;
+    }
+
+    .trip-1 {
+        font-weight: 300;
+        font-size: 5px;
+    }
+    
+    .trip-2 {
+        font-weight: 800;
+        font-size: 7px;
+    }
+
+    .login-tab {
+        width: 100px;
+        height: 23px;
+        border-radius: 4px;
+        padding: 0 5px;
+    }
+    
+    .logo-2 {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    
+    .font {
+        font-size: 5px;
+    }
+}
+
+@media (max-width:550px) {
+    .state {
+        border: 1px solid #e1e1e1;
+        border-radius: 8px;
+        font-size: 8px;
+        font-weight: 600;
+        padding: 2px 4px;
+        margin-left: 2px;
+    }
+
+    .nav {
+        width: 190px;
+    }
+
+    .link {
+        font-size: 7px;
+        margin-right: 1.5px;
+    }
+
+    .navbar {
+        padding: 0 9px ;
+    }
+
+    .appLogo h1 {
+        font-size: 12px;
+    }
+
+    .trip {
+        width: 70px;
+        min-height: 15px;
+        min-width: 40px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        width: 12px;
+        height: 12px;
+        font-size: 9px;
+        margin-right: 1.5px;
+    }
+
+    .trip-1 {
+        font-weight: 300;
+        font-size: 3px;
+    }
+    
+    .trip-2 {
+        font-weight: 800;
+        font-size: 5px;
+    }
+
+    .login-tab {
+        width: 60px;
+        height: 20px;
+        border-radius: 4px;
+        padding: 0 3px;
+    }
+    
+    .logo-2 {
+        margin-left: 2px;
+        margin-right: 2px;
+        font-size: 10px;
+    }
+    
+    .font {
+        font-size: 4px;
+    }
+
+}
